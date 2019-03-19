@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>test</title>
+    <style>body { margin: 0; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <!-- Attachment point for your app -->
+    <div id="container">
+
+      <ul style="position: absolute;">
+        <li><a href="index.html" style="position:absolute">Bathroom</a></li>
+        <li><a href="index2.html" style="position:absolute">Bedroom</a></li>
+        <li><a href="index3.html" style="position:absolute">Hall</a></li>
+        <li><a href="index4.html" style="position:absolute">Garden</a></li>
+        <li><a href="index5.html" style="position:absolute">Pool</a></li>
+        <li><a href="index6.html" style="position:absolute">Hall way</a></li>   
+    </ul>
+    
+    </div>
+    <script src="./client.bundle?platform=vr"></script>
+    <script>
+      // Initialize the React 360 application
+      React360.init(
+        'index.bundle?platform=vr&dev=true',
+        document.getElementById('container'),
+        {
+          assetRoot: 'static_assets_3/',
+        }
+      );
+    </script>
+  </body>
+</html>
+
